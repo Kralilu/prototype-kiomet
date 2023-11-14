@@ -1,0 +1,58 @@
+<script setup lang="ts">
+import WelcomeItem from './WelcomeItem.vue'
+import DocumentationIcon from './icons/IconDocumentation.vue'
+import ToolingIcon from './icons/IconTooling.vue'
+import EcosystemIcon from './icons/IconEcosystem.vue'
+import CommunityIcon from './icons/IconCommunity.vue'
+import SupportIcon from './icons/IconSupport.vue'
+</script>
+
+<template>
+  <div class="ml-20">
+    <WelcomeItem>
+      <template #icon>
+        <EcosystemIcon />
+      </template>
+      <template #heading>Jeu</template>
+      <RouterLink to="/jeu" class="text-green-200 underline">Démarrer une partie!</RouterLink>
+    </WelcomeItem>
+
+    <WelcomeItem>
+      <template #icon>
+        <i class="pi pi-bars"></i>
+      </template>
+      <template #heading>Règles</template>
+      <RouterLink to="/scoreboard" class="text-green-200 underline">Les règles du jeu.</RouterLink>
+    </WelcomeItem>
+
+    <WelcomeItem>
+      <template #icon>
+        <DocumentationIcon />
+      </template>
+      <template #heading>Documentation</template>
+      <RouterLink to="/documentation" class="text-green-200 underline">La documentation officielle</RouterLink>
+      du jeu.
+    </WelcomeItem>
+
+    <WelcomeItem>
+      <template #icon>
+        <ToolingIcon />
+      </template>
+      <template #heading>Outils</template>
+
+      <RouterLink to="/instruction" class="text-green-200 underline">Les instructions.</RouterLink>
+
+    </WelcomeItem>
+
+
+    <WelcomeItem>
+      <template #icon>
+        <i class="pi pi-chart-line"></i>
+      </template>
+      <template #heading>Tableau des scores</template>
+      <RouterLink to="/scoreboard" class="text-green-200 underline">Le scoreboard</RouterLink>
+      global.
+    </WelcomeItem>
+
+  </div>
+</template>
