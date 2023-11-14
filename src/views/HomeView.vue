@@ -5,9 +5,8 @@ import HelloWorld from '../components/HelloWorld.vue'
 
 <template>
   <header>
-
-    <div class="wrapper">
-      <HelloWorld msg="DCI Kiomet II" />
+    <div>
+      <HelloWorld msg="JDIS Games Wish II" />
     </div>
   </header>
   <main class="mb-5">

@@ -38,6 +38,10 @@ const router = createRouter({
       path: '/rules',
       name: 'rule',
       component: () => import('../views/RuleView.vue')
+    }, {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('../views/AdminView.vue')
     }
   ]
 })

@@ -1,12 +1,12 @@
 <template>
-      <Card class="w-full h-full">
+    <Card class="w-full h-full bg-slate-200 text-gray-700 shadow-md rounded-md p-10">
         <template #header>
             <div class="wrapper">
-                <HelloWorld msg="Scoreboard" />
+                <HelloWorld msg="Scoregraph" />
             </div>
         </template>
         <template #content>
-            <Chart type="line" :heigth="300" :data="chartData" :options="chartOptions" class="h-60rem" />
+            <Chart type="line" :height="400" :width="600" :data="chartData" :options="chartOptions" class="w-full h-full" />
         </template>
     </Card>
 </template>
