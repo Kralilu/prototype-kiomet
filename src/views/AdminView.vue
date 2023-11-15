@@ -1,12 +1,13 @@
 <template>
     <Toast />
-    <div class="grid gap-4">
+    <h1 class="text-3xl">Modifier les propriétés</h1>
+    <div class="grid gap-6 mt-4 font-semibold">
         <InputBox label="Taille de la carte" />
         <InputBox label="Vitesse de déplacement des unités" />
         <InputBox label="Vitesse de transformation des terrains" />
         <InputBox label="Durée de la partie" />
         <InputBox label="Vitesse de création des unités" />
-        <Button @click="showTopLeft">Confirm</Button>
+        <Button class="text-center" @click="showTopLeft" label="Confirmer" icon="pi pi-check" severity="danger"/>
     </div>
 </template>
 
@@ -20,7 +21,6 @@ import { useToast } from 'primevue/usetoast';
 const toast = useToast();
 
 const showTopLeft = () => {
-    console.log("A")
-    toast.add({ severity: 'info', summary: 'Info Message', detail: 'Message Content', group: 'tl', life: 3000 });
+    toast.add({ severity: 'info', summary: 'Propriétés modifiées avec succès', detail: 'Les changements seront appliqués dès la prochaine partie.', life: 3000 });
 };
 </script>

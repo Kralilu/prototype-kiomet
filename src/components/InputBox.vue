@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col">
-        <label :for="props.label" class="mb-2">{{ props.label }}</label>
-        <InputNumber class="text-black border-r-2" v-model="val" :id="props.label" />
+        <label :for="props.label" class="mb-2 font-semibold">{{ props.label }}</label>
+        <InputNumber v-model="val" :id="props.label" />
     </div>
 </template>
   

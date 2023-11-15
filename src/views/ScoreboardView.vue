@@ -6,7 +6,12 @@
             </div>
         </template>
         <template #content>
-            <Chart type="line" :height="400" :width="600" :data="chartData" :options="chartOptions" class="w-full h-full" />
+            <Chart type="line" :height="400" :width="700" :data="chartData" :options="chartOptions" class="w-full h-full" />
+        </template>
+        <template #footer>
+            <div class="wrapper">
+                <Button label="Export PNG" icon="pi pi-file-export" class="bg-blue-600" />
+            </div>
         </template>
     </Card>
 </template>
@@ -15,6 +20,7 @@
 import Chart from "primevue/chart";
 import Card from 'primevue/card';
 import HelloWorld from "@/components/HelloWorld.vue";
+import Button from "primevue/button";
 
 import { ref, onMounted } from "vue";
 

@@ -1,8 +1,14 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
+import Button from 'primevue/button';
+
+const router = useRoute();
 </script>
 
 <template>
+  <RouterLink to="/">
+    <Button v-if="router.path !== '/'" icon="pi pi-home" class="fixed top-10 left-10"></Button>
+  </RouterLink>
   <RouterView />
 </template>
 
