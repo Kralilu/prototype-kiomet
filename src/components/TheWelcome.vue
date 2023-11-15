@@ -20,7 +20,7 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
         <i class="pi pi-bars"></i>
       </template>
       <template #heading>Règles</template>
-      <RouterLink to="/scoreboard" class="text-green-200 underline">Les règles du jeu.</RouterLink>
+      <RouterLink to="/rule" class="text-green-200 underline">Les règles du jeu.</RouterLink>
     </WelcomeItem>
 
     <WelcomeItem>
@@ -57,7 +57,7 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
         <i class="pi pi-code"></i>
       </template>
       <template #heading>Admin</template>
-      <RouterLink to="/admin" class="text-green-200 underline">Modifié les paramètres globaux.</RouterLink>
+      <RouterLink to="/admin" class="text-green-200 underline">Modifier les paramètres globaux.</RouterLink>
     </WelcomeItem>
 
   </div>
