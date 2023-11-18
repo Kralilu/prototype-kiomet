@@ -17,6 +17,14 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
 
     <WelcomeItem>
       <template #icon>
+        <i class="pi pi-file-edit"></i>
+      </template>
+      <template #heading>Inscription</template>
+      <RouterLink to="/inscription" class="text-green-200 underline">Inscrire son équipe.</RouterLink>
+    </WelcomeItem>
+
+    <WelcomeItem>
+      <template #icon>
         <i class="pi pi-bars"></i>
       </template>
       <template #heading>Règles</template>

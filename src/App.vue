@@ -7,7 +7,7 @@ const router = useRoute();
 
 <template>
   <RouterLink to="/">
-    <Button v-if="router.path !== '/'" icon="pi pi-home" class="fixed top-10 left-10"></Button>
+    <Button v-if="router.path !== '/'" icon="pi pi-home" class="fixed top-10 left-10" raised :outlined="true"></Button>
   </RouterLink>
   <RouterView />
 </template>

@@ -35,7 +35,7 @@ const router = createRouter({
       component: () => import('../views/ScoreboardView.vue')
     },
     {
-      path: '/rules',
+      path: '/rule',
       name: 'rule',
       component: () => import('../views/RuleView.vue')
     }, {
